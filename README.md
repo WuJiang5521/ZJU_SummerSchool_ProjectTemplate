@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+本项目仅限用于2020年浙江大学暑期学校课程项目模板。
 
-## Available Scripts
+## 如何启动本项目
 
-In the project directory, you can run:
+1. 使用git命令，将本项目同步到本地：
 
-### `yarn start`
+   `git clone https://github.com/WuJiang5521/ZJU_SummerSchool_ProjectTemplate.git`
+   
+2. 在项目文件夹内，使用git命令，修改remote到你们小组的仓库：
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   将原来的远程仓库重命名：`git remote rename origin template-origin`
+   
+   添加你的远程仓库地址：`git remote add origin your_remote_url`
+   
+   添加文件修改：`git add .`
+   
+   提交文件修改：`git commit -m "Initial Commit"`
+   
+   上传：`git push -u origin master`
+   
+3. 在项目文件夹内，使用npm运行项目：
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+   安装所有依赖库：`npm install`
+   
+   运行项目：`npm start`
+   
+   如果能正常运行，你应该可以看到浏览器中出现四个区域，每个区域有一个数字0和一个按钮。
+   点击任意按钮都可以使四个数字加一。
+   
+## 本项目目前已安装的库
 
-### `yarn test`
+1. Material UI
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   组件库
+   
+1. clsx
 
-### `yarn build`
+   拼接类名
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. papaparse
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+   解析.csv文件
