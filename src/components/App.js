@@ -2,6 +2,9 @@ import React from 'react';
 import clsx from "clsx";
 import {makeStyles} from "@material-ui/core";
 import AssistView from "./AssistView";
+import ControlPanel from "./ControlPanel";
+import Overview from "./Overview";
+import DetailView from "./DetailView";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -48,10 +51,10 @@ function App() {
     const classes = useStyles();
 
     return <div className={classes.root}>
-        <div className={clsx(classes.view, classes.controlPanel)}><AssistView/></div>
+        <div className={clsx(classes.view, classes.controlPanel)}><ControlPanel/></div>
         <div className={clsx(classes.view, classes.assistView)}><AssistView/></div>
-        <div className={clsx(classes.view, classes.overview)}><AssistView/></div>
-        <div className={clsx(classes.view, classes.detailView)}><AssistView/></div>
+        <div className={clsx(classes.view, classes.overview)}><Overview/></div>
+        <div className={clsx(classes.view, classes.detailView)}><DetailView/></div>
     </div>;
 }
 

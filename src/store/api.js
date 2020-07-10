@@ -1,3 +1,5 @@
+// 本文件提供了数据接口
+
 import Papa from 'papaparse';
 
 export function fetchCsvData() {
