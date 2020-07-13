@@ -8,6 +8,7 @@ function Overview() {
     const getOption = () => {
         console.log(state.data);
         // change your data to an option here
+        // this option is the same as the options that you wrote on the first day
         return {
             xAxis: {
                 type: 'category',
