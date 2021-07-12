@@ -1,30 +1,34 @@
-import React, {useContext} from 'react';
-import {store} from "../store";
+import React, { useContext } from 'react';
+import { store } from "../store";
 import ReactEcharts from "echarts-for-react";
+import 'echarts/map/js/china';
 
 function Overview() {
-    const {state, dispatch} = useContext(store);
+    // const {state, dispatch} = useContext(store);
 
-    const getOption = () => {
-        console.log(state.data);
-        // change your data to an option here
-        // this option is the same as the options that you wrote on the first day
-        return {
-            xAxis: {
-                type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [{
-                data: [1, 2, 3, state.count, 5, 6, 7],
-                type: 'line'
-            }]
-        }
-    };
+    // const getOption = () => {
+    //     return {
+    //         xAxis: {
+    //             type: 'category',
+    //             data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    //         },
+    //         yAxis: {
+    //             type: 'value'
+    //         },
+    //         series: [{
+    //             data: [120, 200, 150, 80, 70, 110, 130],
+    //             type: 'bar',
+    //             showBackground: true,
+    //             backgroundStyle: {
+    //                 color: 'rgba(180, 180, 180, 0.2)'
+    //             }
+    //         }]
+    //     };
+    // };
 
-    return <ReactEcharts option={getOption()}/>;
+    return <div>
+        {/* <ReactEcharts option={getOption()} />; */}
+    </div>
 }
 
 export default Overview;
